@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+
+        .traffic-light {
+            width: 120px;
+            background-color: #333;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #lamp {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: red;
+            transition: background-color 0.3s ease;
+        }
+
+        #status-message {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            min-height: 36px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="traffic-light">
+        <div id="lamp"></div>
+    </div>
+
+    <div id="status-message">Светофор работает</div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
